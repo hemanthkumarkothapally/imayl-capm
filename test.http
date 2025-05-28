@@ -1,0 +1,36 @@
+GET  http://localhost:4004/odata/v4/imailservice/Carriers
+###
+POST  http://localhost:4004/odata/v4/imailservice/Carriers
+Content-Type: application/json
+
+{
+  "Name": "dvsh",
+  "Description": "courier and logistics company"
+}
+
+###
+POST  http://localhost:4004/odata/v4/imailservice/Package_Statuses
+Content-Type: application/json
+
+{
+  "Code": "PKG-001",
+  "Description": "Package is ready for dispatch",
+  "Templates": "DispatchTemplate",
+  "Type": "Outgoing",
+  "ColorPicker": "#4CAF50",
+  "OrderFlow": "Initiated > Packed > Dispatched",
+  "Status": "Ready",
+  "PhotoRequired": true,
+  "SignatureRequired": false,
+  "HideTracking": false
+}
+###
+
+POST  http://localhost:4004/odata/v4/imailservice/Delivery_Locations
+Content-Type: application/json
+
+{
+  "LocationCode":"HYD",
+  "LocationName":"hyderabad",
+  "LocationStatus":"Active"
+}

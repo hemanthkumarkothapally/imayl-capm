@@ -1,0 +1,3 @@
+ID,empID,firstName,lastName,emailID,phone,address1,city,state,zipcode,country,location,department,role,status,userType,accessType,language
+0929689f-7f45-4f5e-88dd-49355cb3a996,EMP200063,Richard,Smith,richard.smith@example.com,+91-9618329360,"7565 Reynolds Center Suite 716",Hyderabad,Telangana,66928,India,Building L,Logistics,Manager,ACTIVE,STAFF,ALL,English
+0e0cdef9-bd40-4a53-8721-87dd0e07cc00,EMP200060,Jennifer,Mitchell,jennifer.mitchell@example.com,+91-9776719424,"73930 James Port",Hyderabad,Telangana,82738,India,Building I,Finance,Analyst,ACTIVE,STAFF,ALL,English
