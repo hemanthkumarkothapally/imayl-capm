@@ -1,10 +1,13 @@
-GET  http://localhost:4004/odata/v4/imailservice/Carriers
+GET  http://localhost:4004/odata/v4/imailservice/CountData(tablename='Carriers')
+###
+GET   http://localhost:4004/odata/v4/imailservice/Carriers
 ###
 POST  http://localhost:4004/odata/v4/imailservice/Carriers
 Content-Type: application/json
 
 {
   "Name": "dvsh",
+  "Status":"Active",
   "Description": "courier and logistics company"
 }
 

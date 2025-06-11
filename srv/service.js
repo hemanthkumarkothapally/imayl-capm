@@ -1,6 +1,17 @@
 const cds = require("@sap/cds");
 module.exports = (src) => {
     const { Users, Carriers, Package_Types ,Package_Statuses,Locations,Calendars,Delivery_Locations} = src.entities;
+
+    src.on('CountData', async (req) => {
+        const tablename = req.data.tablename;
+
+        let result1 = await SELECT.from(tablename).where({ Status: "Active" });
+        let result2 = await SELECT.from(tablename).where({ Status: "InActive" });
+        let Active_count=result1.length;
+        let InActive_count=result2.length;
+        return {Active_count,InActive_count};
+      });
+
     src.on('CREATE', 'Carriers', async (req) => {
         const { Name, Description, Status } = req.data;
         if (!Name || !Description || !Status) {
